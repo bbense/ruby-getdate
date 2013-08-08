@@ -22,3 +22,52 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+
+The unlicense above refers to the work I have done to port this code to
+ruby 1.9. This work is based on a tar file I downloaded in 2004 from a
+message on the Usenet group comp.lang.ruby 
+
+Subject:  Re: Ruby interface to gnu date handling library?	
+From:	Kaspar Schiess (eu...@space.ch)
+Date:	Dec 15, 2004 9:47:30 am
+List:	org.ruby-lang.ruby-talk
+"Booker C. Bense" <bbense+comp.lang.ruby.Dec.14.04
+@telemark.slac.stanford.edu> wrote in news:cpna6b$ohq$1@news.Stanford.EDU:
+
+_ Thanks, that will work just fine. I couldn't even remember what
+command used this kind of date string. I guess I picked the wrong
+week to cut back on my coffee consumption %-). 
+
+Good luck with cutting back on coffee; I actually do the reverse. No wonder 
+that my googling did have the desired effects... 
+
+Download the first and last release of ruby-getdate here: 
+http://www.tua.ch/ruby/getdate/ruby-getdate.tgz
+
+And read all about it here: 
+http://www.tua.ch/ruby/current.html
+
+This is really just the tiniest wrapper... And it might not even be up to 
+date. I feel lazy tonight. You can own the project if you feel inclined to 
+do so. 
+
+best regards, and lots of fun, 
+kaspar
+
+hand manufactured code - www.tua.ch/ruby
+
+
+
+
+Some of the software in this project contains it's own license. 
+getdate.y 
+/*
+**  Originally written by Steven M. Bellovin <smb@research.att.com> while
+**  at the University of North Carolina at Chapel Hill.  Later tweaked by
+**  a couple of people on Usenet.  Completely overhauled by Rich $alz
+**  <rsalz@bbn.com> and Jim Berets <jberets@bbn.com> in August, 1990;
+**
+**  This grammar has 13 shift/reduce conflicts.
+**
+**  This code is in the public domain and has no copyright.
+*/
