@@ -16,10 +16,14 @@ VALUE rb_get_date( VALUE klass, VALUE datestr ) {
   
   Check_Type(datestr, T_STRING);
   
-
   now = get_date( StringValuePtr(datestr), 0 ); 
 
-  return rb_time_new( now, 0 );  
+  /* get_date returns -1 if datestr does not parse */ 
+  if ( now < (time_t) 0 ) {
+    return Qnil ; 
+  } else {
+  	return rb_time_new( now, 0 );
+  }  
 }
 
 void Init_getdate () {
